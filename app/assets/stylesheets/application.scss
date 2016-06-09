@@ -99,7 +99,7 @@ div.application-container {
   margin-bottom: 5px;
 }
 
-.welcome-mobile-feature {
+.application-mobile-visible {
   display: none;
 }
 
@@ -109,15 +109,16 @@ div.application-container {
     background-attachment: scroll;
   }
 
-  .welcome-mobile-feature {
+  .application-mobile-visible {
     display: block;
-    margin-left: -20px;
-    max-width: calc(100% + 40px);
-    width: calc(100% + 40px);
+  }
+
+  .application-mobile-hidden {
+    display: none;
   }
 
   header.welcome-header {
-    margin-top: 31px;
+    margin-top: 20px;
     .application-logo-desktop {
       float: none;
       width: 70px;
@@ -127,6 +128,7 @@ div.application-container {
   .text-lead {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 10px;
     font-size: 85%;
     br {
       display: none;
