@@ -34,37 +34,44 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   -webkit-font-smoothing: antialiased;
   font-family: Fugue, sans-serif;
 }
 
-header.application-header {
-  text-align: center;
+header.welcome-header {
   margin-top: 90px;
-  img {
-    width: 172px;
+  .application-logo-desktop {
+    width: 104px;
+    margin-right: 20px;
+    float: left;
   }
 }
 
 footer.application-footer {
   font-size: 90%;
-  text-align: center;
   margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+  a {
+    color: inherit;
+  }
 }
 
 div.application-container {
-  max-width: 520px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 
 .text-lead {
-  text-align: center;
   text-transform: uppercase;
   margin-left: 25px;
   margin-right: 25px;
+  line-height: 1.5;
+  font-size: 110%;
+  letter-spacing: 0.5px;
 }
 
 .text-button {
@@ -80,6 +87,28 @@ div.application-container {
 }
 
 .application-subscribe-button {
-  margin-top: 75px;
-  text-align: center;
+  margin-top: 47px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-device-width: 550px) {
+  div.application-container {
+    padding-right: 45px;
+  }
+  header.welcome-header {
+    margin-top: 31px;
+    .application-logo-desktop {
+      float: none;
+      width: 70px;
+    }
+  }
+
+  .text-lead {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 90%;
+    br {
+      display: none;
+    }
+  }
 }
