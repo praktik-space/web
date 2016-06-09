@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Praktik</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="application-container">
+    <header class="application-header">
+      <%= image_tag 'praktik-logo.svg' %>
+    </header>
+
+    <%= yield %>
+    <footer class="application-footer">
+      Санкт-Петербург, 7-я Советская, 22 <br>
+      метро Пл. Восстания
+    </footer>
+  </div>
+
+</body>
+</html>
