@@ -16,6 +16,14 @@
 
 @import 'normalize-css/normalize.css';
 
+@font-face {
+    font-family: 'fugueregular';
+    src: font-url('fugue-webfont.woff2') format('woff2'),
+         font-url('fugue-webfont.woff') format('woff'),
+         font-url('fugue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
   box-sizing: border-box;
 }
@@ -31,12 +39,12 @@ html {
 body {
   background: image-url('praktik-feature-image.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: rgba(255, 255, 255, 0.9);
   -webkit-font-smoothing: antialiased;
-  font-family: Fugue, sans-serif;
+  font-family: fugueregular, sans-serif;
 }
 
 header.welcome-header {
@@ -91,10 +99,23 @@ div.application-container {
   margin-bottom: 5px;
 }
 
+.welcome-mobile-feature {
+  display: none;
+}
+
 @media only screen and (max-device-width: 550px) {
-  div.application-container {
-    padding-right: 45px;
+  body {
+    background: rgba(0, 0, 0, 0.85);
+    background-attachment: scroll;
   }
+
+  .welcome-mobile-feature {
+    display: block;
+    margin-left: -20px;
+    max-width: calc(100% + 40px);
+    width: calc(100% + 40px);
+  }
+
   header.welcome-header {
     margin-top: 31px;
     .application-logo-desktop {
@@ -106,7 +127,7 @@ div.application-container {
   .text-lead {
     margin-left: 0;
     margin-right: 0;
-    font-size: 90%;
+    font-size: 85%;
     br {
       display: none;
     }
