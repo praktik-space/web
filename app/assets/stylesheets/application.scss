@@ -34,6 +34,8 @@ img {
 
 html {
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -45,6 +47,8 @@ body {
   color: rgba(255, 255, 255, 0.9);
   -webkit-font-smoothing: antialiased;
   font-family: fugueregular, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header.welcome-header {
