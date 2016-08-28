@@ -43,73 +43,22 @@ html {
 }
 
 body {
-  background: image-url('praktik-feature-image.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: rgba(255, 255, 255, 0.9);
-  -webkit-font-smoothing: antialiased;
+  color: white;
   font-family: fugueregular, sans-serif;
+  -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background: #2E2D15;
 }
 
-header.welcome-header {
-  margin-top: 90px;
-  .application-logo-desktop {
-    width: 104px;
-    margin-right: 20px;
-    float: left;
-  }
-}
-
-footer.application-footer {
-  font-size: 90%;
-  margin-bottom: 50px;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.4;
-  a {
-    color: inherit;
-  }
-}
 
 div.application-container {
   max-width: 640px;
   margin: 0 auto;
+  margin-top: 120px;
   padding: 0 20px;
-}
-
-
-.text-lead {
-  text-transform: uppercase;
-  margin-left: 25px;
-  margin-right: 25px;
-  line-height: 1.5;
-  font-size: 110%;
-  letter-spacing: 0.5px;
-}
-
-.text-button {
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 95%;
-  cursor: pointer;
-  background: #2bb351;
-  line-height: 30px;
-  display: inline-block;
-  padding: 0 10px;
-}
-
-.application-subscribe-button {
-  margin-top: 47px;
-  margin-bottom: 5px;
-}
-
-.application-mobile-visible {
-  display: none;
+  text-align: center;
 }
 
 @media only screen and (max-device-width: 550px) {
